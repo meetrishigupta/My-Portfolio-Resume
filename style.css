@@ -585,7 +585,6 @@ border: 1px solid black; */
   width: 50%;
 }
 .details {
-  position: absolute;
   top: 50%;
   /* width: 50%; */
   margin: auto;
@@ -596,7 +595,7 @@ border: 1px solid black; */
 .details h3 {
   font-size: 30px;
   color: rgb(255, 255, 255);
-  font-weight: 600 !important;
+  font-weight: 600;
 }
 @media (max-width: 800px) {
   .main-contact-container {
