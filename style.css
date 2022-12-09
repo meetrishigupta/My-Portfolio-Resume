@@ -584,14 +584,26 @@ border: 1px solid black; */
 .contact-form-main2 {
   width: 50%;
 }
-.details{
+.details {
   position: absolute;
   top: 50%;
-/* width: 50%; */
-margin: auto;
+  /* width: 50%; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .details h3 {
   font-size: 30px;
   color: rgb(255, 255, 255);
   font-weight: 600 !important;
+}
+@media (max-width: 800px) {
+  .main-contact-container {
+    flex-direction: column;
+  }
+  .contact-form-main,
+  .contact-form-main2 {
+    width: 100%;
+  }
 }
