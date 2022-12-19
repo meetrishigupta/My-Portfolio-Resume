@@ -5,6 +5,19 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: poppins;
 }
+#bottomtoUp{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #A7A9CE;
+  box-shadow: 0 0 10px rgb(166, 60, 176, 0.25);
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
 /* HEADER SECTION */
 #body-header {
   height: 70vh;
