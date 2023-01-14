@@ -18,6 +18,10 @@ body {
   outline: none;
   cursor: pointer;
 }
+#bottomtoUp:hover{
+  background-color: #a7a9cea2;
+
+}
 /* HEADER SECTION */
 #body-header {
   height: 70vh;
