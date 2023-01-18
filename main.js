@@ -1,7 +1,7 @@
 
 
 const maintop = document.querySelector(".bottomtoUp");
-window.addEventListener("scroll",() => {
+window.addEventListener("scroll", () => {
     if(window.pageYOffset > 100){
         maintop.classList.add("active");
     }
