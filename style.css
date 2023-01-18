@@ -22,14 +22,16 @@ body {
   align-items: center;
   pointer-events: none;
   transition: all .4s;
+  /* display: none; */
 }
 .bottomtoUp.active{
 bottom:32px;
 pointer-events: auto;
 opacity: 1;
+display: flex;
 }
 
-#bottomtoUp:hover {
+.bottomtoUp:hover {
   background-color: #a7a9cea2;
 }
 /* HEADER SECTION */
