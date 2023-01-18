@@ -5,7 +5,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: poppins;
 }
-#bottomtoUp {
+.bottomtoUp {
   position: fixed;
   right: 40px;
   bottom: 40px;
@@ -17,13 +17,13 @@ body {
   background-color: #a7a9ce;
   box-shadow: 0 0 10px rgb(166, 60, 176, 0.25);
   color: white;
-justify-content: center;
+  justify-content: center;
   outline: none;
   align-items: center;
   pointer-events: none;
   transition: all .4s;
 }
-#bottomtoUp.active{
+.bottomtoUp.active{
 bottom:32px;
 pointer-events: auto;
 opacity: 1;
