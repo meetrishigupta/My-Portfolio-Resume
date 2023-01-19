@@ -5,4 +5,8 @@ window.addEventListener("scroll", () => {
   } else {
     maintop.classList.remove("active");
   }
+
+  maintop.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+  });
 });
