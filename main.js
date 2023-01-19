@@ -11,13 +11,3 @@ window.addEventListener("scroll", () => {
 })
 
 
-
-function top(){
-   window.pageYOffset =0; 
-}
-
-// top.addEventListener("click", ()=> {
-//     window.pageYOffset = 0;
-// })
-
-console.log(maintop)
