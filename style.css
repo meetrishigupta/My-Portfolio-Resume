@@ -21,14 +21,14 @@ body {
   outline: none;
   align-items: center;
   pointer-events: none;
-  transition: all .4s;
-  /* display: none; */
+  transition: all 0.4s;
+  display: none;
 }
-.bottomtoUp.active{
-bottom:32px;
-pointer-events: auto;
-opacity: 1;
-display: flex;
+.bottomtoUp.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+  display: flex;
 }
 
 .bottomtoUp:hover {
