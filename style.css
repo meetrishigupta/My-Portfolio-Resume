@@ -131,12 +131,17 @@ section {
 }
 .abouttext {
   margin-top: -10vh;
+
   font-family: poppins;
   padding-right: 100px;
   padding-left: 100px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
+}
+.headingabout {
+  display: block;
+  width: 300px;
 }
 .abouttext p {
   margin-top: 40px;
@@ -622,6 +627,13 @@ border: 1px solid black; */
 }
 
 @media (max-width: 800px) {
+  .abouttext{
+padding-right: 50px; 
+padding-left: 50px; }
+
+.fa-solid, .fas{
+  font-size: 27px;
+}
   .main-contact-container {
     align-items: center;
     flex-direction: column;
