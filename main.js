@@ -12,7 +12,8 @@ window.addEventListener("scroll", () => {
   });
 });
 //Listener for Form
-document.getElementsByClassName('contact-form').addEventListener('submit', submitForm);
+document.getElementsByClassName('contact-form')
+addEventListener('submit', submitForm);
 function submitForm(dummy){
 dummy.preventDefault(); 
 console.log(123);
