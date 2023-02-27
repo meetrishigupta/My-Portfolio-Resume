@@ -11,10 +11,9 @@ window.addEventListener("scroll", () => {
     window.scrollTo(0, 0);
   });
 });
-//Listener for Form
-document.getElementsByClassName('contact-form')
-addEventListener('submit', submitForm);
-function submitForm(dummy){
-dummy.preventDefault(); 
-console.log(123);
+// Listener for Form
+document.getElementById("contactForm").addEventListener("submit", submitForm);
+function submitForm(e) {
+  e.preventDefault();
+  console.log(123);
 }
