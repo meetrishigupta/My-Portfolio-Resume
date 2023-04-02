@@ -13,12 +13,11 @@ window.addEventListener("scroll", () => {
 });
 // Listener for Form
 
-let allNavtags = document.querySelectorAll('nav-menu a');
+let allnavigation = document.querySelectorAll("nav-menu a");
 
-console.log(allNavtags);
- for(var i=0; i<=allNavtags; i++){
-  allNavtags[i].addEventListener('click', function(event){
+console.log(allnavigation);
+for (var i = 0; i < allnavigation.length; i++) {
+  allnavigation[i].addEventListener('click', function (event) {
     event.preventDefault();
-  })
- }
-
+  });
+}
