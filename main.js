@@ -16,4 +16,9 @@ window.addEventListener("scroll", () => {
 let allNavtags = document.querySelectorAll('nav-menu a');
 
 console.log(allNavtags);
+ for(var i=0; i<=allNavtags; i++){
+  allNavtags[i].addEventListener('click', function(event){
+    event.preventDefault();
+  })
+ }
 
