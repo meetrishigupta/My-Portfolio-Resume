@@ -13,11 +13,13 @@ window.addEventListener("scroll", () => {
 });
 // Listener for Form
 
-let allnavigation = document.querySelectorAll("nav-menu a");
+let allnavigation = document.querySelectorAll(".nav-menu a");
 
 console.log(allnavigation);
 for (var i = 0; i < allnavigation.length; i++) {
-  allnavigation[i].addEventListener('click', function (event) {
+  allnavigation[i].addEventListener("click", function (event) {
     event.preventDefault();
+    var targetIdselection = this.textContent.trim().toLowerCase();
+    console.log(targetIdselection);
   });
 }
