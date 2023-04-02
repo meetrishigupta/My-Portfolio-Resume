@@ -12,8 +12,8 @@ window.addEventListener("scroll", () => {
   });
 });
 // Listener for Form
-document.getElementById("contactForm").addEventListener("submit", submitForm);
-function submitForm(e) {
-  e.preventDefault();
-  console.log(123);
-}
+
+let allNavtags = document.querySelectorAll('nav-menu a');
+
+console.log(allNavtags);
+
