@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   background-color: rgb(255, 255, 255);
@@ -627,13 +629,15 @@ border: 1px solid black; */
 }
 
 @media (max-width: 800px) {
-  .abouttext{
-padding-right: 50px; 
-padding-left: 50px; }
+  .abouttext {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 
-.fa-solid, .fas{
-  font-size: 27px;
-}
+  .fa-solid,
+  .fas {
+    font-size: 27px;
+  }
   .main-contact-container {
     align-items: center;
     flex-direction: column;

@@ -21,14 +21,14 @@ for (var i = 0; i < allnavigation.length; i++) {
     event.preventDefault();
     var targetSectionId = this.textContent.trim().toLowerCase();
     console.log(targetSectionId);
-    targetSection = document.getElementById(targetSectionId);
+    var targetSection = document.getElementById(targetSectionId);
     var interval = setInterval(function () {
       var targetsectionCordinates = targetSection.getBoundingClientRect();
       if (targetsectionCordinates.top <= 0) {
         clearInterval(interval);
         return;
       }
-      window.scrollBy(0, 50);
-    }, 100);
+      window.scrollBy(0, 100);
+    }, 150);
   });
 }
