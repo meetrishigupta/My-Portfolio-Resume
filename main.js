@@ -21,5 +21,14 @@ for (var i = 0; i < allnavigation.length; i++) {
     event.preventDefault();
     var targetIdselection = this.textContent.trim().toLowerCase();
     console.log(targetIdselection);
+    var interval = setTimeout(function () {
+      var targetbound = targetIdselection.getBoundingClientRect();
+
+      if (targetbound.top <= 100) {
+        clearInterval(interval);
+        return;
+      }
+      window.scrollBy(0, 59), 50;
+    });
   });
 }
