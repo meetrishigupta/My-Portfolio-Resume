@@ -200,7 +200,7 @@ border: 1px solid black; */
 /* Percentage Classes */
 
 .eighty-percent {
-  width: 80%;
+  width: 90%;
   border-radius: 0.8rem;
   height: inherit;
 }
@@ -212,7 +212,7 @@ border: 1px solid black; */
 }
 
 .fifty-percent {
-  width: 50%;
+  width: 70%;
   border-radius: 0.8rem;
   height: inherit;
 }
@@ -222,7 +222,7 @@ border: 1px solid black; */
   height: inherit;
 }
 .seventyfive-percent {
-  width: 65%;
+  width: 80%;
   border-radius: 0.8rem;
   height: inherit;
 }

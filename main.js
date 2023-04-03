@@ -19,16 +19,16 @@ console.log(allnavigation);
 for (var i = 0; i < allnavigation.length; i++) {
   allnavigation[i].addEventListener("click", function (event) {
     event.preventDefault();
-    var targetIdselection = this.textContent.trim().toLowerCase();
-    console.log(targetIdselection);
-    var interval = setTimeout(function () {
-      var targetbound = targetIdselection.getBoundingClientRect();
-
-      if (targetbound.top <= 100) {
+    var targetSectionId = this.textContent.trim().toLowerCase();
+    console.log(targetSectionId);
+    targetSection = document.getElementById(targetSectionId);
+    var interval = setInterval(function () {
+      var targetsectionCordinates = targetSection.getBoundingClientRect();
+      if (targetsectionCordinates.top <= 0) {
         clearInterval(interval);
         return;
       }
-      window.scrollBy(0, 59), 50;
-    });
+      window.scrollBy(0, 50);
+    }, 200);
   });
 }
