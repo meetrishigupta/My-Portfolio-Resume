@@ -29,6 +29,6 @@ for (var i = 0; i < allnavigation.length; i++) {
         return;
       }
       window.scrollBy(0, 50);
-    }, 200);
+    }, 100);
   });
 }
