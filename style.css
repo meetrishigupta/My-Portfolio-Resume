@@ -7,6 +7,58 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: poppins;
 }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  margin-left: 250px;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    position: relative;
+    top: 30px;
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(21px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(5px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 95px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #3c3d78f5;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-menu > li {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
 .bottomtoUp {
   position: fixed;
   right: 40px;
