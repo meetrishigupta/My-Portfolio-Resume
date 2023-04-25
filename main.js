@@ -28,7 +28,7 @@ for (var i = 0; i < allnavigation.length; i++) {
         clearInterval(interval);
         return;
       }
-      window.scrollBy(0, 150);
+      window.scrollBy(0, 300);
     }, 150);
   });
 }
