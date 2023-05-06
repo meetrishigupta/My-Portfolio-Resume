@@ -13,25 +13,25 @@ window.addEventListener("scroll", () => {
 });
 // Listener for Form
 
-let allnavigation = document.querySelectorAll(".nav-menu a");
+// let allnavigation = document.querySelectorAll(".nav-menu a");
 
-console.log(allnavigation);
-for (var i = 0; i < allnavigation.length; i++) {
-  allnavigation[i].addEventListener("click", function (event) {
-    event.preventDefault();
-    var targetSectionId = this.textContent.trim().toLowerCase();
-    console.log(targetSectionId);
-    var targetSection = document.getElementById(targetSectionId);
-    var interval = setInterval(function () {
-      var targetsectionCordinates = targetSection.getBoundingClientRect();
-      if (targetsectionCordinates.top <= 0) {
-        clearInterval(interval);
-        return;
-      }
-      window.scrollBy(0, 300);
-    }, 150);
-  });
-}
+// console.log(allnavigation);
+// for (var i = 0; i < allnavigation.length; i++) {
+//   allnavigation[i].addEventListener("click", function (event) {
+//     event.preventDefault();
+//     var targetSectionId = this.textContent.trim().toLowerCase();
+//     console.log(targetSectionId);
+//     var targetSection = document.getElementById(targetSectionId);
+//     var interval = setInterval(function () {
+//       var targetsectionCordinates = targetSection.getBoundingClientRect();
+//       if (targetsectionCordinates.top <= 0) {
+//         clearInterval(interval);
+//         return;
+//       }
+//       window.scrollBy(0, 300);
+//     }, 150);
+//   });
+// }
 
 //hamburger
 

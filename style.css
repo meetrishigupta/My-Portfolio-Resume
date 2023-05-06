@@ -699,3 +699,15 @@ border: 1px solid black; */
     width: 100%;
   }
 }
+.submit-button-wrapper button {
+  background-color: #9443f0;
+  font-size: 18px;
+  height: 8vh;
+  border-radius: 2px;
+  width: 30vh;
+  color: white;
+  border: none;
+}
+.submit-button-wrapper button:hover {
+  opacity: 0.9;
+}
