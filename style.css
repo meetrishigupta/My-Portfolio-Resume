@@ -28,7 +28,11 @@ body {
   .hamburger {
     position: relative;
     top: 30px;
+    left: 28px;
     display: block;
+  }
+  .overlay{
+    margin-top: -5px;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -106,6 +110,7 @@ section {
 .overlay {
   z-index: 1;
   height: 70vh;
+ 
   background-color: rgba(16, 17, 56, 0.844);
 }
 /* NAVIGATION SECTION */
